@@ -1,0 +1,14 @@
+OASISFormat: 0.4
+Name:        anyalyzer
+Version:     0.1
+Synopsis:    Shogi Kifu Analyzer
+Authors:     INAJIMA Daisuke
+License:     MIT
+Plugins:     DevFiles (0.4)
+
+Executable anyalyzer
+  Path:       src
+  BuildTools: ocamlbuild, menhir
+  MainIs:     anyalyzer.ml
+  BuildDepends: core, threads
+  CompiledObject: best
